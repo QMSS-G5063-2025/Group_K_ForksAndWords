@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+pandas
+tqdm
+seaborn
+matplotlib
+selenium
+nltk
+scikit-learn
+openpyxl
