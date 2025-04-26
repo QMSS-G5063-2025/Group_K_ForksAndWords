@@ -1,4 +1,4 @@
-# ForksAndWords 🍴  
+# ForksAndWords(https://forksandwords-4trbwiyybkvjuhdskenlzs.streamlit.app/) 
 > *Turning Michelin-starred narratives into data-driven delicacies.*
 
 ---
