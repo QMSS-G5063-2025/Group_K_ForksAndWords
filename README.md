@@ -48,7 +48,7 @@ A **playfully academic**, **delightfully messy**, yet **strangely addictive** jo
 ## 🌎 Project Layout
 ```
 ForksAndWords/
-├── app.py                     # Main homepage (Michelin restaurant-style design)
+├── Home.py                     # Main homepage (Michelin restaurant-style design)
 ├── pages/
 │   ├── 1_Data_Process.py       # NLP Text Cleaning Walkthrough
 │   ├── 2_Map.py                # Michelin Star Map Visualization
