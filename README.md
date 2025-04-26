@@ -18,6 +18,7 @@ At its core, this project reimagines Michelin restaurant descriptions through:
 
 The result?  
 A **playfully academic**, **delightfully messy**, yet **strangely addictive** journey across the culinary and textual landscapes of New York.
+<img width="572" alt="image" src="https://github.com/user-attachments/assets/ca0eaf8b-90a9-47ab-9999-05ec28d288df" />
 
 ---
 
