@@ -133,7 +133,7 @@ def main():
         else:
             print("Invalid choice. Please enter a number from 0 to 3.")
 ```
-Menu Options:
+♦️Menu Options:
 - 1 → Run LDA topic modeling on the descriptions and generate michelin_with_topics.xlsx and lda_topic_keywords.csv
 - 2 → Apply manually labeled consumer scenes from manual_scene_labels.csv and generate michelin_with_scene.xlsx
 - 3 → Launch the Streamlit website (streamlit run Home.py)
