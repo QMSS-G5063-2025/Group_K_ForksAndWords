@@ -96,7 +96,7 @@ Our project allows you to process the restaurant data step-by-step through a sim
 - Open and manually interpret `lda_topic_keywords.csv`.
 - Create and save your marketing-style labels in a new file:  
   ➔ `data/manual_scene_labels.csv`  
-  (Add `consumer_scene` and `theme` columns based on topic keywords.)
+  (Fill in `consumer_scene` and `theme` columns based on topic keywords.)
 
 ### 4. Merging the Final Dataset
 - Merge your marketing labels back into the restaurant dataset.
