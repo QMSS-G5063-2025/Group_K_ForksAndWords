@@ -78,6 +78,62 @@ ForksAndWords/
 - `image/` contains branding assets for the homepage.
 ---
 
+## 🛠️ How to Run the Data Processing Pipeline
+
+Our project allows you to process the restaurant data step-by-step through a simple and clear workflow.
+
+### 1. Initial Input
+- Start with the file:  
+  ➔ `data/michelin_full.xlsx`  
+  (Includes restaurant name, stars, cuisine, description, price range, and coordinates.)
+
+### 2. LDA Topic Modeling
+- Run the pipeline, which will automatically generate:
+  - `data/michelin_with_topics.xlsx` → Restaurant data with assigned **dominant topics**.
+  - `data/lda_topic_keywords.csv` → Extracted **top keywords** per topic for manual interpretation.
+
+### 3. Manual Scene Labeling
+- Open and manually interpret `lda_topic_keywords.csv`.
+- Create and save your marketing-style labels in a new file:  
+  ➔ `data/manual_scene_labels.csv`  
+  (Add `consumer_scene` and `theme` columns based on topic keywords.)
+
+### 4. Merging the Final Dataset
+- Merge your marketing labels back into the restaurant dataset.
+- This will produce:  
+  ➔ `data/michelin_with_scene.xlsx`  
+  (Fully labeled and ready for website visualization.)
+
+---
+
+## 🚀 How to Operate via CLI Menu
+
+To make running the steps even easier, you can simply run the `main.py` file.  
+You will see a menu like this:
+
+```python
+def main():
+    while True:
+        print_menu()
+        choice = input("\nEnter your choice (0-3): ").strip()
+
+        if choice == "1":
+            nlp_topic_modeling.run_lda_on_descriptions()
+
+        elif choice == "2":
+            apply_scene_tags.merge_scene_labels()
+
+        elif choice == "3":
+            visualization.create_spatial_map()
+
+        elif choice == "0":
+            print("Exiting the program. Goodbye!")
+            break
+
+        else:
+            print("Invalid choice. Please enter a number from 0 to 3.")
+---
+
 ## 👨‍🍳 Chefs de Cuisine
 
 - **Rong Xia**
