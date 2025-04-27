@@ -132,6 +132,7 @@ def main():
 
         else:
             print("Invalid choice. Please enter a number from 0 to 3.")
+```
 ---
 
 ## 👨‍🍳 Chefs de Cuisine
