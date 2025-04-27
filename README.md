@@ -110,7 +110,6 @@ Our project allows you to process the restaurant data step-by-step through a sim
 ## 🚀 How to Operate via CLI Menu
 
 To make running the steps even easier, you can simply run the `main.py` file.  
-You will see a menu like this:
 
 ```python
 def main():
@@ -134,6 +133,11 @@ def main():
         else:
             print("Invalid choice. Please enter a number from 0 to 3.")
 ```
+Menu Options:
+	•	1 → Run LDA topic modeling on the descriptions and generate michelin_with_topics.xlsx and lda_topic_keywords.csv
+	•	2 → Apply manually labeled consumer scenes from manual_scene_labels.csv and generate michelin_with_scene.xlsx
+	•	3 → Launch the Streamlit website (streamlit run Home.py)
+	•	0 → Exit the program
 ---
 
 ## 👨‍🍳 Chefs de Cuisine
