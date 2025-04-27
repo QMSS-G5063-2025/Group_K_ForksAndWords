@@ -27,12 +27,11 @@ A **playfully academic**, **delightfully messy**, yet **strangely addictive** jo
 
 | Step | Description |
 |:----|:------------|
-| 1 | **Handpicked Ingredients:** Manually collected Michelin-starred restaurant info (name, stars, cuisine, description, price, coordinates). |
-| 2 | **Artisan Preparation:** Cleaning, tokenization, stemming of descriptions using customized NLP pipelines. |
-| 3 | **Hidden Flavors Revealed:** Applying LDA topic modeling to surface latent themes. |
-| 4 | **Signature Pairings:** Assigning the most dominant topic to each restaurant, labeling consumer scenes. |
-| 5 | **Cartographic Plating:** Visualizing the distribution of restaurants by star level, topic, and scene on interactive maps. |
-
+| 1 | **Handpicked Ingredients:** Initially attempted to scrape data from Yelp and TripAdvisor, but due to anti-scraping protections, we pivoted to manual collection. Gathered Michelin-starred restaurant information (name, stars, cuisine, description, price range, and coordinates) to ensure clean, copyright-respectful data. |
+| 2 | **Artisan Preparation:** Cleaned, tokenized, and stemmed the restaurant descriptions using a customized NLP pipeline to prepare for further modeling. |
+| 3 | **Hidden Flavors Revealed:** Applied Latent Dirichlet Allocation (LDA) to uncover underlying thematic structures within the text corpus. |
+| 4 | **Signature Pairings:** Assigned each restaurant its most dominant topic, crafting consumer scene labels that describe the thematic dining experience. |
+| 5 | **Cartographic Plating:** Mapped the restaurants interactively, visualizing distributions by Michelin stars, dominant topics, and consumer scenes across New York City. |
 ---
 
 ## 🧰 Tech Stack
