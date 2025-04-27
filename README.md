@@ -49,20 +49,33 @@ A **playfully academic**, **delightfully messy**, yet **strangely addictive** jo
 ## 🌎 Project Layout
 ```
 ForksAndWords/
-├── Home.py                     # Main homepage (Michelin restaurant-style design)
-├── pages/
-│   ├── 1_Data_Process.py       # NLP Text Cleaning Walkthrough
-│   ├── 2_Map.py                # Michelin Star Map Visualization
-│   └── 3_Marketing_Map.py      # Consumer Scene Map Visualization
-├── data/
-│   ├── michelin_full.xlsx      # Original collected data
-│   ├── lda_topic_keywords.csv  # Extracted LDA topics
-│   └── manual_scene_labels.csv # Manually assigned consumer scenes
-├── image/
-│   └── banner_michelin.png     # Homepage banner image
-├── README.md                   # Project introduction (this file)
-└── requirements.txt            # Python package requirements
+├── Home.py                     # Main homepage (Michelin restaurant-style design using Streamlit)
+├── pages/                       # Subpages for website navigation
+│   ├── 1_Data_Process.py        # NLP Text Cleaning Walkthrough (Tokenization, Stopword Removal, Stemming)
+│   ├── 2_Map.py                 # Michelin Star Map Visualization (stars, locations)
+│   └── 3_Marketing_Map.py       # Consumer Scene Map Visualization (based on LDA topic modeling)
+├── app/                         # Backend scripts for data processing and modeling
+│   ├── init.py              # Package initialization
+│   ├── apply_scene_tags.py      # Merge manual consumer scene labels with restaurant data
+│   ├── main.py                  # CLI-based menu for running LDA, applying scenes, and visualization
+│   ├── nlp_topic_modeling.py    # LDA topic modeling and dominant topic assignment
+│   └── stemmer_custom.py        # Custom stemming function for NLP preprocessing
+├── data/                        # Data files used for analysis and visualization
+│   ├── michelin_full.xlsx       # Original manually collected Michelin restaurant data
+│   ├── lda_topic_keywords.csv   # Extracted LDA topic keywords for manual labeling
+│   ├── manual_scene_labels.csv  # Manually assigned consumer scene labels
+├── image/                       # Visual assets for website
+│   └── banner_michelin.png      # Homepage header banner image
+├── README.md                    # Project introduction, structure, and usage
+└── requirements.txt             # Python package requirements for setting up the environment
 ```
+
+🔹 **Notes**:
+- `Home.py` serves as the main entry point, designed in the style of a Michelin restaurant page.
+- `app/` contains backend scripts for text processing, LDA modeling, and merging scene tags.
+- `pages/` contains individual interactive pages for website navigation.
+- `data/` stores both raw and processed data files used in the project.
+- `image/` contains branding assets for the homepage.
 ---
 
 ## 👨‍🍳 Chefs de Cuisine
