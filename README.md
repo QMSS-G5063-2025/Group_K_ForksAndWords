@@ -5,7 +5,7 @@
 
 ## 📍 Project Overview
 
-**ForksAndWords** is the flagship project of **Group K** at **Columbia University's GSAS (QMSS Program)**, developed as the final showcase for **G5063 Data Visualization** under the mentorship of **Professor Thomas Brambor**.
+**ForksAndWords** is the flagship project of **Group K** at **Columbia University's GSAS (QMSS Program)**, developed as the [final showcase for **G5063 Data Visualization**](https://github.com/QMSS-G5063-2025/course_content/blob/main/Exercises/final_project/proposal/final_project.md) under the mentorship of **Professor Thomas Brambor**.
 
 Much like a Michelin-starred kitchen transforms humble ingredients into haute cuisine,  
 **ForksAndWords** elevates unstructured text into a layered, revealing feast through lightly processed NLP and data storytelling.
