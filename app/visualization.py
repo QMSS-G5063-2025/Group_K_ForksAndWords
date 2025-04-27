@@ -1,12 +1,24 @@
 # app/visualization.py
 
 """
-Visualization module placeholder.
+Visualization module.
 
-This file is reserved for future implementation of:
-- Spatial maps of Michelin restaurants
-- Visualization by consumer scene and Michelin stars
+When triggered, this module will launch the Streamlit web application (Home.py).
 """
 
+import subprocess
+import sys
+import os
+
 def create_spatial_map():
-    print("Visualization module is under development. No action performed yet.")
+    print("Launching Streamlit app...")
+
+    # Get the path to Home.py
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    app_path = os.path.join(project_root, "Home.py")
+
+    # Call streamlit run Home.py
+    try:
+        subprocess.run([sys.executable, "-m", "streamlit", "run", app_path], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Failed to launch Streamlit app: {e}")
